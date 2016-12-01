@@ -1,0 +1,22 @@
+{
+  "name": "fs-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server/server.js"
+  },
+  "author": "Andy Axton",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dir-to-json": "0.0.3",
+    "errno": "^0.1.4",
+    "express": "^4.14.0",
+    "fs-promise": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
