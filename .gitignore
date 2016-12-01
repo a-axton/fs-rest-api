@@ -1,1 +1,4 @@
+server/test-dir/*
+!server/test-dir/sub-dir/main.css
+!server/test-dir/index.html
 node_modules
