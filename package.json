@@ -1,14 +1,34 @@
 {
-  "name": "fs-api",
+  "name": "fs-rest-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "An Express app for exposing the node filesystem as a simplified API",
+  "homepage": "https://github.com/a-axton/fs-rest-api",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a-axton/fs-rest-api.git"
+  },
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "apidoc -i ./lib -o ./docs",
     "dev": "nodemon server/server.js"
   },
   "author": "Andy Axton",
   "license": "ISC",
+  "apidoc": {
+    "title": "Node Filesystem Rest API",
+    "url": "https://your.server.com",
+    "order": [
+      "Tree",
+      "Stat",
+      "Read",
+      "Write",
+      "Append",
+      "Rename",
+      "Move",
+      "Remove"
+    ]
+  },
   "dependencies": {
     "body-parser": "^1.15.2",
     "dir-to-json": "0.0.3",
@@ -17,6 +37,7 @@
     "fs-promise": "^1.0.0"
   },
   "devDependencies": {
+    "apidoc": "^0.16.1",
     "nodemon": "^1.11.0"
   }
 }
