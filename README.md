@@ -1,5 +1,5 @@
 # Node Filesystem Rest API
-This Express app exposes a simple API for proxying the nodejs filesystem.
+This Express app exposes a simple API for proxying the nodejs filesystem. Doesn't allow any operations above the specified base directory.
 **Warnings:** Still in active development, API may change regularly. Not recommended for production servers.
 #### Documentation
 https://a-axton.github.io/fs-rest-api/
@@ -26,3 +26,6 @@ Allows the proper owner settings for creating directories. More here https://nod
 ```js
 process.umask(0);
 ```
+#### TODO
+- Add tests
+- Modify middleware to work for Hapi, KOA, restify
